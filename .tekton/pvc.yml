@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: oc-lab-pvc
+  namespace: sn-labs-ghitabounoua
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: skills-network-learner
+  resources:
+    requests:
+      storage: 1Gi
